@@ -149,25 +149,13 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             except (PasswordHashInvalid, PasswordHashInvalidError, PasswordHashInvalid1):
                 await two_step_msg.reply("» Kata Sandi yang Diberikan Tidak Valid. Silakan mulai membuat sesi lagi.", quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
                 return
-    else:
         if telethon:
-            await client.start(bot_token=phone_number)
+            string_session = client.session.save()
         else:
-            await client.sign_in_bot(phone_number)
-    if telethon:
-        string_session = client.session.save()
-    else:
-        string_session = await client.export_session_string()
-    text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}`\n\n**ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ:**@CilikStringBot\n **ɴᴏᴛᴇ:** ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ᴊᴏɪɴ @CilikSupport"
-    try:
-        if not is_bot:
-            await client.send_message("me", text)
-        else:
-            await bot.send_message(msg.chat.id, text)
-    except KeyError:
-        pass
-    await client.disconnect()
-    await phone_code_msg.reply("<b>Berhasil Membuat {} String Session</b>\n\n<code>{}</code>\n\n<b>Support:</b> @CilikSupport".format("telethon" if telethon else "pyrogram", string_session))
+            string_session = await client.export_session_string()
+        await phone_code_msg.reply("<b>Berhasil Membuat {} String Session</b>\n\n<code>{}</code>\n\n<b>Support:</b> @CilikSupport".format("telethon" if telethon else "pyrogram", string_session))
+        await client.disconnect()
+
 
 async def cancelled(msg):
     if "/cancel" in msg.text:
