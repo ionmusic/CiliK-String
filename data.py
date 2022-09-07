@@ -2,24 +2,24 @@ from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
-    generate_single_button = [InlineKeyboardButton("ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ", callback_data="generate")]
+    generate_single_button = [InlineKeyboardButton("ꜱᴛᴀᴛʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ ꜱᴇꜱꜱɪᴏɴ", callback_data="generate")]
 
     generate_button = [generate_single_button]
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("sᴜᴩᴩᴏʀᴛ", url="https://t.me/damprivateroom"),
-         InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/xflsdam"),
+        [InlineKeyboardButton("sᴜᴩᴩᴏʀᴛ", url="https://t.me/CilikSupport"),
+         InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/greyyvbss"),
         ],
     ]
 
     START = """
-Hᴇʏ {},
+Hey {},
 
-Tʜɪs ɪs {},
-Aɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇᴅ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ!
+This is {},
+Bot untuk Mengambil String Session!
 
-Mᴀᴅᴇ ᴡɪᴛʜ 👑 ʙʏ: [ᴅᴀϻ•](https://t.me/xflsdam)
+Made With 👑 By: [ɢʀᴇʏ](https://t.me/greyyvbss)
 —
-ɢʀᴏᴜᴘ ꜱᴜᴘᴘᴏʀᴛ: [ᴢᴇᴛsᴜ sᴜᴘᴘᴏʀᴛ](https://t.me/damprivateroom)
+Group Support: [ᴄɪʟɪᴋ ꜱᴜᴘᴘᴏʀᴛ](https://t.me/CilikSupport)
     """
