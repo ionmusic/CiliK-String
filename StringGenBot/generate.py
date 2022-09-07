@@ -75,7 +75,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         return
     api_hash = api_hash_msg.text
     if not is_bot:
-        t = "» Silahkan masukan **NOMOR_TELEPON** kalian dengan awalan +. \nContoh : `+62812345678`'"
+        t = "» Silahkan masukan **NOMOR_TELEPON** kalian dengan awalan (+) \nContoh : `+62812345678`'"
     else:
         t = "ᴩʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ʙᴏᴛ_ᴛᴏᴋᴇɴ** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\nᴇxᴀᴍᴩʟᴇ : `5432198765:abcdanonymousterabaaplol`'"
     phone_number_msg = await bot.ask(user_id, t, filters=filters.text)
