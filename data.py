@@ -14,12 +14,12 @@ class Data:
     ]
 
     START = """
-Hey {},
+**Hey** {},
 
-This is {},
-Bot untuk Mengambil String Session!
+**This is** {},
+**Bot untuk Mengambil String Session!**
 
-Made With 👑 By: [ɢʀᴇʏ](https://t.me/greyyvbss)
+**Made With 👑 By:** [ɢʀᴇʏ](https://t.me/greyyvbss)
 —
-Group Support: [ᴄɪʟɪᴋ ꜱᴜᴘᴘᴏʀᴛ](https://t.me/CilikSupport)
+**Group Support:** [ᴄɪʟɪᴋ ꜱᴜᴘᴘᴏʀᴛ](https://t.me/CilikSupport)
     """
