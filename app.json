@@ -1,7 +1,7 @@
 {
   "name": "sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
   "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
-  "logo": "https://telegra.ph/file/842c45cad95ec37b1b50d.jpg",
+  "logo": "https://telegra.ph/file/05c7982e106962b905ef4.jpg",
   "stack": "heroku-22",
   "keywords": [
     "telegram",
