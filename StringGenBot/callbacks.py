@@ -49,4 +49,4 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
 
 
 ERROR_MESSAGE = "Wtf! Ada yang salah. \n\n**Kesalahan**: {} " \
-            "\n\n**Tolong teruskan pesan ini ke** @CilikSupport"
+            "\n\n**Tolong teruskan pesan ini ke** @kazusupportgrp"
