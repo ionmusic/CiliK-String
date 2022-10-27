@@ -36,7 +36,7 @@ ask_ques = "**» Silahkan Tekan String Mana Yang Ingin Kamu Ambil 🧐:**"
 buttons_ques = [
     [
         InlineKeyboardButton("ᴩʏʀᴏɢʀᴀᴍ v1 [ʙᴏᴛ ᴍᴜꜱɪᴄ]", callback_data="pyrogram1"),
-        InlineKeyboardButton("ᴩʏʀᴏɢʀᴀᴍ v2 [ᴄɪʟɪᴋ-ᴜʙᴏᴛ]", callback_data="pyrogram"),
+        InlineKeyboardButton("ᴩʏʀᴏɢʀᴀᴍ v2 [ᴘʏʀᴏ-ᴜsᴇʀʙᴏᴛ]", callback_data="pyrogram"),
     ],
     [
         InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
@@ -153,7 +153,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             string_session = client.session.save()
         else:
             string_session = await client.export_session_string()
-        await phone_code_msg.reply("<b>Berhasil Membuat {} String Session</b>\n\n<code>{}</code>\n\n<b>Support:</b> @CilikSupport".format("telethon" if telethon else "pyrogram", string_session))
+        await phone_code_msg.reply("<b>Berhasil Membuat {} String Session</b>\n\n<code>{}</code>\n\n<b>Support:</b> @disinikazu".format("telethon" if telethon else "pyrogram", string_session))
         await client.disconnect()
 
 
