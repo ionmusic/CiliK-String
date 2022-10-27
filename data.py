@@ -19,7 +19,7 @@ class Data:
 **This is** {},
 **Bot untuk Mengambil String Session!**
 
-**Made With 👑 By:** [KAZU](https://t.me/disinikazu)
+**Made With 👑 By:** [ᴋᴀᴢᴜ](https://t.me/disinikazu)
 —
-**Group Support:** [KAZU SUPPORT](https://t.me/kazusupportgrp)
+**Group Support:** [ᴋᴀᴢᴜ sᴜᴘᴘᴏʀᴛ](https://t.me/kazusupportgrp)
     """
