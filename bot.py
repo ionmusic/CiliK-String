@@ -1,5 +1,6 @@
 import env
 import logging
+from dotenv import load_dotenv
 from pyrogram import Client, idle
 from pyromod import listen  # type: ignore
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
