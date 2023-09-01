@@ -86,9 +86,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         await msg.reply("» Mencoba mengirim otp di nomor yang diberikan...")
     else:
         await msg.reply("» ᴛʀʏɪɴɢ ᴛᴏ ʟᴏɢɪɴ ᴠɪᴀ ʙᴏᴛ ᴛᴏᴋᴇɴ...")
-    if telethon and is_bot:
-        client = TelegramClient(StringSession(), api_id, api_hash)
-    elif telethon:
+    if telethon and is_bot or telethon:
         client = TelegramClient(StringSession(), api_id, api_hash)
     elif is_bot:
         client = Client(name="bot", api_id=api_id, api_hash=api_hash, bot_token=phone_number, in_memory=True)
@@ -153,7 +151,9 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             string_session = client.session.save()
         else:
             string_session = await client.export_session_string()
-        await phone_code_msg.reply("<b>Berhasil Membuat {} String Session</b>\n\n<code>{}</code>\n\n<b>Support:</b> @disinikazu".format("telethon" if telethon else "pyrogram", string_session))
+        await phone_code_msg.reply(
+            f'<b>Berhasil Membuat {"telethon" if telethon else "pyrogram"} String Session</b>\n\n<code>{string_session}</code>\n\n<b>Support:</b> @disinikazu'
+        )
         await client.disconnect()
 
 
